@@ -8,5 +8,6 @@
 }
 
 html {
-  @apply scroll-smooth text-base;
+  /* font-size: 18px; */
+  @apply scroll-smooth text-lg text-default-900;
 }
