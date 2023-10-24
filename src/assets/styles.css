@@ -194,3 +194,18 @@
 .cm-icon-plus-1:before {
   content: "\5a";
 }
+.cm-icon-facebook:before {
+  content: "\30";
+}
+.cm-icon-youtube-play:before {
+  content: "\31";
+}
+.cm-icon-github:before {
+  content: "\32";
+}
+.cm-icon-linkedin:before {
+  content: "\33";
+}
+.cm-icon-link:before {
+  content: "\34";
+}
