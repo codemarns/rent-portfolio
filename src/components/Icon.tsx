@@ -4,7 +4,7 @@ import { iconStyles } from "../styles";
 
 export type IconProps = {
   className?: string;
-  path: string;
+  path: string[] | string;
   size?: "sm" | "md" | "lg" | "xl";
   color?:
     | "primary"
@@ -21,7 +21,7 @@ export type IconProps = {
 export const Icon: React.FC<IconProps> = (props) => {
   const {
     className,
-    path = "",
+    path,
     size: propSize = "md",
     color: propColor = "default",
   } = props;
@@ -29,6 +29,8 @@ export const Icon: React.FC<IconProps> = (props) => {
   const {
     root: { base, size, color },
   } = iconStyles;
+
+  const newArray = Array.isArray(path);
 
   return (
     <svg
@@ -39,7 +41,18 @@ export const Icon: React.FC<IconProps> = (props) => {
       stroke="currentColor"
       className={cn(base, size[propSize], color[propColor], className)}
     >
-      <path d={path} strokeLinecap="round" strokeLinejoin="round" />
+      {newArray ? (
+        path.map((newPath, index) => (
+          <path
+            key={index}
+            d={newPath}
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        ))
+      ) : (
+        <path d={path} strokeLinecap="round" strokeLinejoin="round" />
+      )}
     </svg>
   );
 };
