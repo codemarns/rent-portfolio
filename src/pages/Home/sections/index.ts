@@ -1,5 +1,6 @@
 export { Hero } from "./Hero";
 export { About } from "./About";
-export { RentalOffer } from "./RentalOffer";
+export { Ratings } from "./Ratings";
 export { WhyChoose } from "./WhyChoose";
+export { RentalOffer } from "./RentalOffer";
 export { NextAdventure } from "./NextAdventure";
