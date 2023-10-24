@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import { About, Home, NotFound } from "./pages";
-import { Header } from "./ layouts";
+import { Header, Footer } from "./ layouts";
 
 function App() {
   return (
@@ -12,6 +12,7 @@ function App() {
           <Route path="/rent-portfolio/about" element={<About />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <Footer />
       </div>
     </main>
   );
