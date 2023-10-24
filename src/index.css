@@ -4,6 +4,7 @@
 
 * {
   @apply box-border m-0 p-0;
+  font-family: "Lexend", sans-serif;
 }
 
 html {
