@@ -55,6 +55,8 @@ export const Button: React.FC<TButtonProps> = (props) => {
     className
   );
 
+  const newColor = variant === "solid" ? "white" : color;
+
   return (
     <button
       {...restProps}
@@ -67,7 +69,7 @@ export const Button: React.FC<TButtonProps> = (props) => {
       {iconPosition === "left" && iconPath && (
         <Icon
           path={iconPath}
-          color={color}
+          color={newColor}
           className={cn({ [root.icon.base]: loading })}
         />
       )}
@@ -77,7 +79,7 @@ export const Button: React.FC<TButtonProps> = (props) => {
       {iconPosition === "right" && iconPath && (
         <Icon
           path={iconPath}
-          color={color}
+          color={newColor}
           className={cn({ [root.icon.base]: loading })}
         />
       )}
