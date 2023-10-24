@@ -4,3 +4,4 @@ export { Ratings } from "./Ratings";
 export { WhyChoose } from "./WhyChoose";
 export { RentalOffer } from "./RentalOffer";
 export { NextAdventure } from "./NextAdventure";
+export { Message } from "./Message";

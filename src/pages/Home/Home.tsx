@@ -2,6 +2,7 @@ import {
   Hero,
   About,
   Ratings,
+  Message,
   WhyChoose,
   RentalOffer,
   NextAdventure,
@@ -16,6 +17,7 @@ export function Home() {
       <RentalOffer />
       <WhyChoose />
       <NextAdventure />
+      <Message />
     </>
   );
 }
