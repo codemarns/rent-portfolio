@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import { About, Home, NotFound } from "./pages";
-import { Header, Footer } from "./ layouts";
+import { Header, Footer } from "./layouts";
 
 function App() {
   return (
